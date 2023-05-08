@@ -2,7 +2,7 @@ import "./customHeader.style.css";
 
 const CustomHeader = ({text}) => {
     return (
-        <h3>{text}</h3>
+        <a className="nav">{text}</a>
     )
 }
 

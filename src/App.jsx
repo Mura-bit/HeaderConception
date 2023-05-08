@@ -2,11 +2,17 @@ import CustomHeader from './components/customHeader/CustomHeader.jsx';
 import './App.css';
 
 function App() {
+  const showPrompt = () => {
+    return alert("Good job!")
+  }
   return (
-    <>
-      <h1>yes</h1>
-      <CustomHeader type="text"/>
-    </>
+    <section className="header">
+      <div className="navbar">
+        <CustomHeader text="Home" type="head" onClickHandler={showPrompt} />
+        <CustomHeader text="About" type="head" onClickHandler={showPrompt} />
+        <CustomHeader text="Contacts" type="head" onClickHandler={showPrompt} />
+      </div>
+    </section>
   );
 }
 
