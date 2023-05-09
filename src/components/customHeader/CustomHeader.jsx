@@ -1,8 +1,11 @@
 import "./customHeader.style.css";
 
-const CustomHeader = ({text}) => {
+const CustomHeader = ({ text, type }) => {
+    const onClickHandler = () => {
+        alert("Do not give up!")
+    }
     return (
-        <a className="nav">{text}</a>
+        <a className={`${type}`} onClick={onClickHandler}>{text}</a>
     )
 }
 
