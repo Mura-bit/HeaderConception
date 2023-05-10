@@ -1,9 +1,6 @@
 import "./customImg.style.css";
 
 const CustomImg = () => {
-    const onClickHandler = () => {
-        
-    }
     return (
       <div className="img">
         <img
